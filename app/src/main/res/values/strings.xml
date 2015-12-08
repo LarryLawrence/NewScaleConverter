@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Scale Converter</string>
+    <string name="app_version">Version 3.0</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="to_be_converted">CONVERT IT FROM:</string>
+    <string name="edit_text_hint">number you wanna convert</string>
+    <string name="text_View_second">TO :</string>
+    <string name="input_it_here">INPUT A NUMBER:</string>
+    <string name="button_start">Run</string>
+    <string-array name="scale_array">
+        <item>Decimal </item>
+        <item>Binary</item>
+        <item>Octal</item>
+        <item>Hex </item>
+        <item>Other..</item>
+    </string-array>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+</resources>

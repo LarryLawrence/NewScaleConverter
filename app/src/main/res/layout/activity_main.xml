@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true" tools:openDrawer="start"
+    >
+
+    <include layout="@layout/app_bar_main" android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView android:id="@+id/nav_view"
+        android:layout_width="wrap_content" android:layout_height="match_parent"
+        android:layout_gravity="start" android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main" app:menu="@menu/activity_main_drawer" />
+
+    <!--hey,如果直接在DrawerLayout里写layout,相当于在原本的界面上覆盖一层新的layout,会导致文字直接从appbar开始排列-->
+    <!--所以,采取Include的方式:先在activity_main中include appbar_main,再在appbar中include content_main,include大约相当于linear layout的顺序排列.-->
+
+
+</android.support.v4.widget.DrawerLayout>
